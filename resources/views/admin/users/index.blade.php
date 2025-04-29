@@ -1,5 +1,6 @@
 @extends('admin.layouts.app')
 
+<!-- Nome que fica na aba do navegador -->
 @section('title', 'Listagem dos Usuários')
 
 @section('content')
