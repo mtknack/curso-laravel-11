@@ -1,6 +1,7 @@
 <x-alert />
 
 <div class="">
+    <!-- verificar se o token do formulario é igual ao token salvo pelo usuario, segurança -->
     @csrf()
     <div class="mb-5">
         <input type="text" name="name" placeholder="Nome" value="{{ $user->name ?? old('name') }}"
