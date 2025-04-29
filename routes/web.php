@@ -1,7 +1,22 @@
 <?php
 
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+
+Route::get('/users', [UserController::class, 'index']) ->name('users.index');
+
+Route::get('/users-create', function () {
+    return "asda";
+}) ->name('users.create'); // temporario
+
+Route::get('/users-edit', function () {
+    return "asda";
+}) ->name('users.edit'); // temporario
+
+Route::get('/users-show', function () {
+    return "asda";
+}) ->name('users.show'); // temporario
 
 Route::get('/', function () {
     return view('welcome');
